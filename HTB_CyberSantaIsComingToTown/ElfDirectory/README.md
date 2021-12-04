@@ -2,10 +2,6 @@
 ## Description
 Can you infiltrate the Elf Directory to get a foothold inside Santa's data warehouse in the North Pole?
 
-## Website
-
-
-
 ## Solution
 
 Login page

@@ -19,4 +19,4 @@ So bits shifts & masks help us extract those
 picoCTF{<flag_here>}
 ```
 
-Bruteforce in cyberchef would do too.
+Encoding bruteforce in cyberchef would do too.

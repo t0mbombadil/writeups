@@ -39,7 +39,7 @@ Quite unusual domain. So I filtered just for similar DNS queries and seems I got
 ![image](https://user-images.githubusercontent.com/18641572/214150474-00e84e8e-9d0f-44b8-b537-ea3df5765319.png)
 
 Queried domain names were different, and there was enough of them to maybe create some kind of string, that maybe could contain flag. I did not want to
-write them by hand even if that would be faster than finding how to do it with some kind a program, because that's not why we have computers to do stuff by hand.
+write them by hand even if that would be faster than finding how to do it with some kind a program, because that's not why we have computers to do stuff by hand (duh!)
 
 ## Parsing file in terminal
 

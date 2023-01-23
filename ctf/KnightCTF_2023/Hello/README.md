@@ -41,6 +41,8 @@ Quite unusual domain. So I filtered just for similar DNS queries and seems I got
 Queried domain names were different, and there was enough of them to maybe create some kind of string, that maybe could contain flag. I did not want to
 write them by hand even if that would be faster than finding how to do it with some kind a program, because that's not why we have computers to do stuff by hand.
 
+## Parsing file in terminal
+
 So I turned my attention to wireshark terminal version (?) `tshark` . I was able to quickly find out the way how to get just proper field from DNS queries
 ```bash
 % tshark -r find-me.pcapng -T fields -e dns.qry.name -Y "dns.flags.response eq 0"
@@ -109,6 +111,7 @@ And since result strings ends with two `==` it looks like base64 padding. So try
 UPBL{o1_mr3a_en0_hk3_i0h}%
 ```
 
+## Decryption
 
 
 And bingo! That's definetely a flag looking at format. But we still need to fight with Sir Vigenère to decrypt it.
@@ -143,6 +146,7 @@ So little manual bruteforce. Then second letter bruteforce and decrypted text st
 And I could probably at this point make a tool doing if for me much quicker, but with third letter I knew what the key would be, and my guess was successful
 
 ![image](https://user-images.githubusercontent.com/18641572/214155410-815ae942-f11e-4b92-b009-1d81c8effdd8.png)
+
 
 
 Voila! C'est une clé envoyée par Monsieur Vigenère.
